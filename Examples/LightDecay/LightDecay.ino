@@ -1,8 +1,8 @@
-#include "LPD8806.h"
-#include "SPI.h"
+//#include "LPD8806.h"
+//#include "SPI.h"
 #include "utils.h"
 
-LPD8806 strip = LPD8806(numLEDs); // The object for controlling the strip
+//LPD8806 strip = LPD8806(numLEDs); // The object for controlling the strip
 LightEntity lights[numLEDs];      // An array of "entities" (just a color for now, but can be more)
 LightEntity newLights[numLEDs];   // A temp array for calculating the next state of the board
 unsigned long lastAddTime;        // Timestamp of when we last added a new random light
@@ -119,10 +119,10 @@ void updateStrip()
 {
   for (int i=0; i<numLEDs; i++)
   {
-    uint32_t stripColor = strip.Color((int)lights[i].color.red, (int)lights[i].color.green, (int)lights[i].color.blue);
-    strip.setPixelColor(i, stripColor);
+//    uint32_t stripColor = strip.Color((int)lights[i].color.red, (int)lights[i].color.green, (int)lights[i].color.blue);
+//    strip.setPixelColor(i, stripColor);
   }  
-  strip.show();
+//  strip.show();
 }
 
 // ===========================================================================

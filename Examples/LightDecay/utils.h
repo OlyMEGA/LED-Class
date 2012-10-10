@@ -1,11 +1,11 @@
-#define numLEDs 16
+#define numLEDs 10
 
 #define RIGHT 0
 #define LEFT 1
 
-#define primaryDecayAmount 0
-#define secondaryDecayAmount 1
-#define decayFactor .6f
+#define primaryDecayAmount 1
+#define secondaryDecayAmount 2
+#define decayFactor .9f
 #define addInterval 50
 
 #define FRAME_DELAY ( (1.0 / 20.0) * 1000.0 )
@@ -13,7 +13,7 @@
 struct Color {
  float red;
  float green;
- float blue;  
+ float blue; 
 };
 
 #define CZERO (Color){0,0,0}
